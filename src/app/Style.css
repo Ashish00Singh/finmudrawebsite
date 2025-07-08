@@ -1,0 +1,94 @@
+.navlogo {
+    display: flex;
+    justify-content: start;
+    /* padding: 15px; */
+}
+
+.navDropIcon {
+    width: 16;
+    height: 16px;
+    transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+    /* Enables 3D rotation */
+}
+
+.navDrop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    /* background-color: aqua; */
+}
+
+.nenuDropdownContainer {
+    position: relative;
+    cursor: pointer;
+}
+
+.navDrop:hover .navDropIcon {
+    transform: rotateX(180deg);
+}
+
+.dropdown {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.dropdown-item {
+    background-color: wheat;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.nenuDropdownContainer:hover .dropdown,
+.dropdown:hover {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.nenuDropdownContainer:hover .navDropIcon {
+    transform: rotateX(180deg);
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.menutitle {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.menu-item::before {
+    content: "";
+    height: 2px;
+    display: block;
+    width: 0;
+    background: blue;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-item:hover::before {
+    width: 10px;
+}
+
+.imgCont {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* mobile */
+
+.Mdropdown-item {
+    background-color: aqua;
+}

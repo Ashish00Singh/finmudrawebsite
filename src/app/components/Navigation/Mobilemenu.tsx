@@ -1,9 +1,5 @@
 "use client"
-import Image from 'next/image';
 import React, { Component, useState } from 'react'
-import down from '../../../../asset/icon/down-chevron.svg'
-import mobil from '../../../../asset/icon/mobHam.svg'
-import { Button } from '@/components/ui/button';
 
 export default function Mobilemenu({hideShow}:any) {
   const [showSubitem, setShowSubitem] = useState(false);

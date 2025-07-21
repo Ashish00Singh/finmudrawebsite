@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import icon1 from '../../../../asset/icon/section5 (4).svg'
+import icon1 from '../../../../asset/icon/section5 (4).png'
 
 function CardOne() {
   return (

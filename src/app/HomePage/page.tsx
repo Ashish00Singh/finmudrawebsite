@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import img2 from '../../../asset/img/section1.2.1.jpg'
 import img3 from '../../../asset/img/imgi_72_image.jpg'
@@ -8,9 +9,6 @@ import call24 from '../../../asset/icon/24-hours.svg'
 import cash from '../../../asset/icon/dollar.381d2031.svg'
 import grap from '../../../asset/icon/marketing.89cce931.svg'
 import icon1 from '../../../asset/icon/icon-1.2a41a740.svg'
-import icon2 from '../../../asset/icon/icon-2.2d8497cc.svg'
-import icon3 from '../../../asset/icon/icon-3.185e39f0.svg'
-import icon4 from '../../../asset/icon/icon-4.ac01dd82.svg'
 // brandIcon
 import facebook from '../../../asset/icon/brandIcon/facebook-f-brands.svg'
 import instagram from '../../../asset/icon/brandIcon/instagram-brands.svg'
@@ -32,14 +30,11 @@ import profile11 from '../../../asset/img/profile/imgi_87_image.jpg'
 import profile1 from '../../../asset/img/__next_static_media_img-1.1a46b2b6.jpg'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
 import Card from '../components/card/Card'
 import CardOne from '../components/card/CardOne'
 import AnimatedSection from '../components/AnimatedSection'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlay } from '@fortawesome/free-solid-svg-icons'
-import { motion } from 'framer-motion';
-import { Input } from '@/components/ui/input'
+import { faPhoneVolume, faPlay } from '@fortawesome/free-solid-svg-icons'
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@/components/ui/select'
 
 const containerVariants = {
@@ -100,9 +95,8 @@ function HomePage() {
               <div className='flex flex-wrap gap-y-3 lg:justify-start justify-center items-center'>
                 <Button className='colorbg rounded-full p-5 me-10 text-white'>Get Started </Button>
                 <div className='flex gap-5 items-center'>
-                  <Image src={call24} alt="call 24"
-                    width={40}
-                    height={40} />
+                  <FontAwesomeIcon color='white' size='xl' className='colorbg p-3 rounded-full' icon={faPhoneVolume} />
+                  
                   <p className='flex flex-col justify-center text-center'>Need help  <a href="tel:+919110065932" className='font-semibold text-xl'>+91 123 456 7890</a></p>
 
                 </div>
@@ -135,7 +129,6 @@ function HomePage() {
         </div>
       </section>
 
-
       <section>
         <div className='grid md:grid-cols-2 grid-cols-1 gap-10 asdf'>
           <div className='flex relative'>
@@ -158,9 +151,10 @@ function HomePage() {
             <div className='grid lg:grid-cols-2 gap-5 grid-cols-1 justify-items-center gap-y-5'>
               <div className='flex items-start gap-10 justify-items-center max-w-xs'>
                 <Image src={grap} alt='sd' />
+                
                 <div>
                   <p className=' font-semibold mb-2'>Digital marketing</p>
-                  <p className='pstyle'>Payment solutions enable to stand to accept</p>
+                  <p className='pstyle'>Payment solutions enable to stand to accepts</p>
                 </div>
               </div>
 
@@ -309,16 +303,16 @@ function HomePage() {
               <div className='flex items-center pb-10 gap-8 z-10 flex-col absolute bottom-0'>
                 <div className='flex gap-2 brandIcons'>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={facebook.src} className='grandContainer' alt="" />
+                    <Image src={facebook} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={instagram.src} className='grandContainer' alt="" />
+                    <Image src={instagram} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={twiter.src} className='grandContainer' alt="" />
+                    <Image src={twiter} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={linkedin.src} className='grandContainer' alt="" />
+                    <Image src={linkedin} className='grandContainer' alt="" />
                   </div>
                 </div>
                 <div className='flex items-center gap-2 z-10 flex-col'>
@@ -336,16 +330,16 @@ function HomePage() {
               <div className='flex items-center pb-10 gap-8 z-10 flex-col absolute bottom-0'>
                 <div className='flex gap-2 brandIcons'>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={facebook.src} className='grandContainer' alt="" />
+                    <Image src={facebook} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={instagram.src} className='grandContainer' alt="" />
+                    <Image src={instagram} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={twiter.src} className='grandContainer' alt="" />
+                    <Image src={twiter} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={linkedin.src} className='grandContainer' alt="" />
+                    <Image src={linkedin} className='grandContainer' alt="" />
                   </div>
                 </div>
                 <div className='flex items-center gap-2 z-10 flex-col'>
@@ -363,16 +357,16 @@ function HomePage() {
               <div className='flex items-center pb-10 gap-8 z-10 flex-col absolute bottom-0'>
                 <div className='flex gap-2 brandIcons'>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={facebook.src} className='grandContainer' alt="" />
+                    <Image src={facebook} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={instagram.src} className='grandContainer' alt="" />
+                    <Image src={instagram} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={twiter.src} className='grandContainer' alt="" />
+                    <Image src={twiter} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={linkedin.src} className='grandContainer' alt="" />
+                    <Image src={linkedin} className='grandContainer' alt="" />
                   </div>
                 </div>
                 <div className='flex items-center gap-2 z-10 flex-col'>
@@ -459,7 +453,7 @@ function HomePage() {
           </div>
 
           <div>
-            <img src="https://finbest-nextjs.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcontact-1.4669b469.jpg&w=1080&q=75" alt="" />
+            <img src="https://finbest-nextjs.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcontact-1.4669b469.jpg&w=1080&q=75" alt="Get in touch" />
           </div>
         </div>
       </section>
@@ -480,16 +474,16 @@ function HomePage() {
               <div className='flex items-center pb-10 gap-8 z-10 flex-col absolute bottom-0'>
                 <div className='flex gap-2 brandIcons'>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={facebook.src} className='grandContainer' alt="" />
+                    <Image src={facebook} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={instagram.src} className='grandContainer' alt="" />
+                    <Image src={instagram} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={twiter.src} className='grandContainer' alt="" />
+                    <Image src={twiter} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={linkedin.src} className='grandContainer' alt="" />
+                    <Image src={linkedin} className='grandContainer' alt="" />
                   </div>
                 </div>
                 <div className='flex items-center gap-2 z-10 flex-col'>
@@ -507,16 +501,16 @@ function HomePage() {
               <div className='flex items-center pb-10 gap-8 z-10 flex-col absolute bottom-0'>
                 <div className='flex gap-2 brandIcons'>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={facebook.src} className='grandContainer' alt="" />
+                    <Image src={facebook} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={instagram.src} className='grandContainer' alt="" />
+                    <Image src={instagram} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={twiter.src} className='grandContainer' alt="" />
+                    <Image src={twiter} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={linkedin.src} className='grandContainer' alt="" />
+                    <Image src={linkedin} className='grandContainer' alt="" />
                   </div>
                 </div>
                 <div className='flex items-center gap-2 z-10 flex-col'>
@@ -534,16 +528,16 @@ function HomePage() {
               <div className='flex items-center pb-10 gap-8 z-10 flex-col absolute bottom-0'>
                 <div className='flex gap-2 brandIcons'>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={facebook.src} className='grandContainer' alt="" />
+                    <Image src={facebook} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={instagram.src} className='grandContainer' alt="" />
+                    <Image src={instagram} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={twiter.src} className='grandContainer' alt="" />
+                    <Image src={twiter} className='grandContainer' alt="" />
                   </div>
                   <div className='w-10 h-10 p-2 rounded-md bg-white '>
-                    <img src={linkedin.src} className='grandContainer' alt="" />
+                    <Image src={linkedin} className='grandContainer' alt="" />
                   </div>
                 </div>
                 <div className='flex items-center gap-2 z-10 flex-col'>

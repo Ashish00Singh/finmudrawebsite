@@ -5,7 +5,7 @@
 }
 
 .navDropIcon {
-    width: 16;
+    width: 16px;
     height: 16px;
     transition: transform 0.2s ease;
     transform-style: preserve-3d;

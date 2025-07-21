@@ -1,13 +1,9 @@
 "use client"
 import Image from 'next/image'
-import React from 'react'
 import image from '../../../asset/img/finmudra.png'
-import fb from '../../../asset/icon/brandIcon/facebook-f-brands.svg'
-import tw from '../../../asset/icon/brandIcon/twitter-brands.png'
-import ins from '../../../asset/icon/brandIcon/instagram-brands.svg'
-import lin from '../../../asset/icon/brandIcon/linkedin-in-brands.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarDays, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -19,22 +15,22 @@ function Footer() {
           <div className='flex gap-2 mt-5 '>
             <a href="#">
               <div className='bg-white w-9 flex justify-center p-2 rounded-sm'>
-                <Image src={fb} alt='fb' height={20} />
+                <FaFacebookF className='text-black text-xl' />
               </div>
             </a>
             <a href="">
               <div className='bg-white p-2 rounded-sm'>
-                <Image src={tw} alt='tw' height={20} />
+               <FaTwitter className='text-black text-xl' />
               </div>
             </a>
             <a href="">
               <div className='bg-white p-2 rounded-sm'>
-                <Image src={ins} alt='ins' height={20} />
+                <FaInstagram className='text-black text-xl' />
               </div>
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/company/finmudra/" target='_blank' >
               <div className='bg-white p-2 rounded-sm'>
-                <Image src={lin} alt='lin' height={20} />
+                <FaLinkedinIn className='text-black text-xl' />
               </div>
             </a>
           </div>

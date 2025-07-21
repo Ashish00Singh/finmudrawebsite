@@ -22,7 +22,8 @@ function LeftSide({servicesde}:any) {
 
                     <div className='shadow-md inset-shadow-2xs bg-[#f6f6f9] pb-10 px-10 rounded-xl group'>
                         <Image
-                            className=' border border-[#00a3c3] bg-white  ms-auto relative bottom-9 p-3 rounded-md servicesIcom'
+                        width={50}
+                            className=' border border-[#00a3c3] bg-white  ms-auto relative bottom-9 p-1 rounded-md servicesIcom'
                             src={icon13}
                             alt=""
                         />
@@ -37,7 +38,8 @@ function LeftSide({servicesde}:any) {
 
                     <div className='shadow-md inset-shadow-2xs  bg-[#f6f6f9] pb-10 px-10 rounded-xl group'>
                         <Image
-                            className=' border border-[#00a3c3] bg-white ms-auto relative bottom-9 p-3 rounded-md servicesIcom'
+                         width={50}
+                            className=' border border-[#00a3c3] bg-white ms-auto relative bottom-9 p-1 rounded-md servicesIcom'
                             src={icon12}
                             alt=""
                         />

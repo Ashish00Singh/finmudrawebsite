@@ -4,16 +4,14 @@ import img2 from '../../../asset/img/section1.2.1.jpg'
 import img3 from '../../../asset/img/imgi_72_image.jpg'
 import dot from '../../../asset/img/dots.png'
 import star from '../../../asset/img/starpatern.png'
-import Starsd from '../../../asset/icon/sdsd.svg'
-import call24 from '../../../asset/icon/24-hours.svg'
-import cash from '../../../asset/icon/dollar.381d2031.svg'
-import grap from '../../../asset/icon/marketing.89cce931.svg'
-import icon1 from '../../../asset/icon/icon-1.2a41a740.svg'
+import cash from '../../../asset/icon/dollar.381d2031.png'
+import grap from '../../../asset/icon/marketing.89cce931.png'
+import icon1 from '../../../asset/icon/icon-1.2a41a740.png'
 // brandIcon
-import facebook from '../../../asset/icon/brandIcon/facebook-f-brands.svg'
-import instagram from '../../../asset/icon/brandIcon/instagram-brands.svg'
-import twiter from '../../../asset/icon/brandIcon/twitter-brands.svg'
-import linkedin from '../../../asset/icon/brandIcon/linkedin-in-brands.svg'
+import facebook from '../../../asset/icon/brandIcon/facebook-f-brands.png'
+import instagram from '../../../asset/icon/brandIcon/instagram-brands.png'
+import twiter from '../../../asset/icon/brandIcon/twitter-brands.png'
+import linkedin from '../../../asset/icon/brandIcon/linkedin-in-brands.png'
 
 
 import img4 from '../../../asset/img/img-1.389b1aba (1).jpg'
@@ -27,7 +25,6 @@ import sect42 from '../../../asset/img/section4 (2).jpg'
 import sect43 from '../../../asset/img/section4 (3).jpg'
 import profile11 from '../../../asset/img/profile/imgi_87_image.jpg'
 
-import profile1 from '../../../asset/img/__next_static_media_img-1.1a46b2b6.jpg'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import Card from '../components/card/Card'
@@ -197,7 +194,7 @@ function HomePage() {
           </div>
           <div>
             <div className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 w-full justify-items-center  '>
-              <div className='card-container shadow-xl rounded-lg'>
+              {/* <div className='card-container shadow-xl rounded-lg'>
                 <Image className='imge1' alt='' src={profile1}></Image>
                 <div className='iconImg2 p-1 flex justify-center'>
                   <Image className='iconImg' alt='' src={Starsd}></Image>
@@ -214,7 +211,9 @@ function HomePage() {
 
                   </div>
                 </button>
-              </div>
+              </div> */}
+              <Card />
+
               <Card />
 
               <Card />

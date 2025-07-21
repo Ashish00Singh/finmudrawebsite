@@ -20,6 +20,7 @@ function page() {
                     {Data.map((item, index) =>
                         <Link key={item.id} href={`/Services/${item.id}`}>
                             <div className='shadow-md inset-shadow-2xs pb-10 px-10 rounded-xl group'>
+
                             <Image
                             width={60}
                             height={60}

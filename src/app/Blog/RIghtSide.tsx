@@ -19,11 +19,11 @@ function RIghtSide() {
           <h3 className='text-3xl'>Categories</h3>
 
           <ul className=' flex flex-col gap-3 pt-4'>
-            <li className='flex gap-2'><FontAwesomeIcon icon={faChevronRight} className='w-2.5 text-[#0081a1] ' /> <span className='text-xl'>Agency</span></li>
+            <li className='flex gap-2 items-center'><FontAwesomeIcon icon={faChevronRight} className='w-2.5 text-[#0081a1] ' /> <span className='text-xl'>Agency</span></li>
             <hr />
-            <li className='flex gap-2'><FontAwesomeIcon icon={faChevronRight} className='w-2.5 text-[#0081a1] ' /> <span className='text-xl'>Corporate</span></li>
+            <li className='flex gap-2 items-center'><FontAwesomeIcon icon={faChevronRight} className='w-2.5 text-[#0081a1] ' /> <span className='text-xl'>Corporate</span></li>
             <hr />
-            <li className='flex gap-2'><FontAwesomeIcon icon={faChevronRight} className='w-2.5 text-[#0081a1] ' /> <span className='text-xl'>Business</span></li>
+            <li className='flex gap-2 items-center'><FontAwesomeIcon icon={faChevronRight} className='w-2.5 text-[#0081a1] ' /> <span className='text-xl'>Business</span></li>
           </ul>
         </div>
       </section>

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Starsd from '../../../../asset/icon/sdsd.svg'
+import Starsd from '../../../../asset/icon/sdsd.png'
 import profile1 from '../../../../asset/img/__next_static_media_img-1.1a46b2b6.jpg'
 
 function Card() {
@@ -8,9 +8,10 @@ function Card() {
     <div>
       <div className='card-container shadow-xl rounded-lg'>
               <Image className='imge1' alt='' src={profile1}></Image>
-              <div className='iconImg2 p-1 flex justify-center'>
+              <div className='iconImg2 p-1 flex justify-center items-center'>
                 <Image className='iconImg' alt='' src={Starsd}></Image>
               </div>
+              
               <div className='tp-service-content-2 flex flex-col gap-4'>
                 <hr className='w-16 hovereff' />
                 <p className='hovereff'>Our services</p>

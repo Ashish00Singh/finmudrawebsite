@@ -1,14 +1,13 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import Mobilemenu from './Mobilemenu'
-import mobil from '../../../../asset/icon/mobHam.svg'
+import mobil from '../../../../asset/icon/mobHam.png'
 import logo from '../../../../asset/img/finmudra.png'
-import callIcon from '../../../../asset/icon/circle.svg'
+import callIcon from '../../../../asset/icon/circle.png'
 import NavigationMenuDropdown from './NavigationMenuDropdown'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link'
-import navData from './navelayoutdata'
 import { Login } from '@/components/cusComponent/dilofBox'
 
 
@@ -73,9 +72,9 @@ export default function Header() {
 
         </div>
         <div className='col-span-3 p-0 '>
-          <div className='flex justify-end justify-items-center gap-5 p-4 flex-row'>
+          <div className='flex justify-end justify-items-center items-center gap-5 p-4 flex-row'>
            <Login/>
-            <Image width={40} height={40} src={callIcon} alt="" className='imgCont' priority />
+            <Image width={40} height={40} src={callIcon} alt="" className='imgCont' />
 
             <div className='flex flex-col'>
               <p className='font-semibold text-center'>

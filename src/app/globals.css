@@ -184,8 +184,8 @@
  }
 
  .iconImg {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
      position: relative;
      z-index: 1;
      filter: brightness(0) invert(1);
@@ -526,7 +526,7 @@
      z-index: 50;
      height: 42px;
      width: 2px;
-     top: 8px;
+     top: 0px;
      left: -20px;
      background: linear-gradient(90deg, #004d6e, #00accc);
  }

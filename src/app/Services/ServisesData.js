@@ -1,6 +1,6 @@
-import serciwIcon from '../../../asset/icon/serviceIcon/download (1).svg'
-import serciwIcon1 from '../../../asset/icon/serviceIcon/download (2).svg'
-import serciwIcon2 from '../../../asset/icon/serviceIcon/download.svg'
+import serciwIcon from '../../../asset/icon/serviceIcon/download (1).png'
+import serciwIcon1 from '../../../asset/icon/serviceIcon/download (2).png'
+import serciwIcon2 from '../../../asset/icon/serviceIcon/download.png'
 import serciwImg from '../../../asset/img/serviceImg/services.jpg'
 
 

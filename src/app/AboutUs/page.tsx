@@ -17,6 +17,7 @@ import facebook from '../../../asset/icon/brandIcon/facebook-f-brands.png'
 import instagram from '../../../asset/icon/brandIcon/instagram-brands.png'
 import twiter from '../../../asset/icon/brandIcon/twitter-brands.png'
 import linkedin from '../../../asset/icon/brandIcon/linkedin-in-brands.png'
+import rating from '../../../asset/icon/rating.png'
 import { motion } from 'framer-motion';
 import dot from '../../../asset/img/dots.png'
 import { Button } from '@/components/ui/button'
@@ -26,6 +27,7 @@ import Testimonial from '../components/card/Testimonial'
 
 // data
 import TestimonialData from '../dataJs/Testimonial'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const icons = [facebook, instagram, twiter, linkedin];
@@ -35,9 +37,9 @@ export default function page() {
     <>
       <section className='asdf '>
         <div className='grid md:grid-cols-2 grid-cols-1 gap-10'>
-          <div className='relative'>
-            <Image className='absolute right-14 top-40' src={img1} alt="" />
-            <div className='absolute z-2 right-36 top-10 bounce-x'>
+          <div className='relative flex items-center'>
+            <Image className='lg:block hidden absolute right-14 top-40' src={img1} alt="" />
+            <div className='lg:block hidden absolute z-2 right-18 top-10 bounce-x'>
               <div className='flex flex-row gap-3 justify-center bradientcolor rounded-lg items-center py-4 px-10'>
                 <p className='text-5xl mb-2 text-white font-extrabold'>25</p>
                 <div className='text-center'>
@@ -48,24 +50,26 @@ export default function page() {
             </div>
             <Image src={img3} width={520} className='relative z-1 rounded-2xl' alt="" />
 
-            <Image src={img2} className='absolute -bottom-20 z-2 right-10 rounded-2xl' alt="" />
-            <Image src={dot} className='absolute -bottom-10 -left-16 z-0 ' alt="" />
+            <Image src={img2} className='lg:block hidden absolute -bottom-20 z-2 right-10 rounded-2xl' alt="" />
+            <Image src={dot} className='lg:block hidden absolute -bottom-10 -left-16 z-0 ' alt="" />
           </div>
-          <div className='grid gap-1 pt-20'>
+          <div className='grid gap-1 lg:pt-20'>
             <div>
               <p className='subheading'>our latest project</p>
               <h2 className='textsize  mt-5 mb-0'>Solutions That Make a Difference</h2>
             </div>
             <div className='grid gap-6'>
               <p className='pe-5'>Payment stions enable businesses to accept payments from ctly customers ctly securely. stions enable businesses to accept payments from ctly customers ctly securely</p>
-              <ul className='grid md:grid-cols-2 grid-cols-1 gap-2' style={{ listStyleType: "circle" }}>
+              <ul className='grid md:grid-cols-2 grid-cols-1 gap-2 ps-5' style={{ listStyleType: "circle" }}>
                 <li className="font-semibold text-lg">Mistakes To Avoid to dum Auam.</li>
                 <li className="font-semibold text-lg">Avoid to the dumy mistakes</li>
                 <li className="font-semibold text-lg">Your Startup industry stan</li>
                 <li className="font-semibold text-lg">Our Startup industry Here</li>
               </ul>
             </div>
-            <Button className='colorbg rounded-full mt-10 p-8 text-xl w-fit me-10 text-white'>About Us  + </Button>
+            <div>
+              <Button className='colorbg rounded-full text-xl w-fit py-6 px-10 mt-10 text-white'>About Us + </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -81,11 +85,13 @@ export default function page() {
               </div>
               <div className='grid gap-6'>
                 <p className='pe-5'>Fact that a reader will be distrol acted bioiiy desig the.ished fact that a reader will be distrol acted bioiiy bioiiy desig the.ished fact that a reader ished fact that</p>
-                <div className='grid grid-cols-2 gap-2'>
-                  <div className='bg-white flex  flex-row gap-3 justify-evenly rounded-lg items-center border border-[#00000048] py-4 px-5'>
-                    <div className='rounded-full p-4 bradientcolor w-fit h-fit'>
-                      <Image width={30} height={30} src={'https://finbest-nextjs.netlify.app/_next/static/media/icon-1.9a5379f6.svg'} alt='sdh'></Image>
+                <div className='grid lg:grid-cols-2 grid-cols-1 gap-2'>
+
+                  <div className='bg-white flex flex-row gap-3 justify-evenly rounded-lg items-center border border-[#00000048] py-4 px-5'>
+                    <div className='rounded-full p-3 bradientcolor w-fit h-fit'>
+                      <Image width={40} height={30} src={rating} alt='sdh' />
                     </div>
+
                     <div className='text-black'>
                       <p className='font-extrabold text-2xl'>10 +</p>
                       <p className='font-semibold text-xl '>Experiences</p>
@@ -105,12 +111,12 @@ export default function page() {
               </div>
             </div>
 
-            <div className='col-span-3 pt-20  justify-items-center'>
-              <div className='bg-white border px-15 py-10 rounded-lg w-[80%]'>
+            <div className='col-span-3 lg:pt-20 pt-5  justify-items-center'>
+              <div className='bg-white border lg:px-15 px-5 py-10 rounded-lg lg:w-[80%] w-[100%]'>
                 <Accordion
                   type="single"
                   collapsible
-                  className="w-full flex flex-col gap-6 hover:no-underline"
+                  className="w-full flex flex-col lg:gap-6 hover:no-underline"
                   defaultValue="item-1"
                 >
                   <AccordionItem value="item-1 ">
@@ -189,14 +195,14 @@ export default function page() {
         <div className='grid  md:grid-cols-2 grid-cols-1 gap-10'>
           <div className='relative order-2 h-fit'>
 
-            <div className='absolute z-5 right-36 top-26 postionAaasdf'>
+            <div className='absolute z-5 lg:right-36 right-0 top-26 postionAaasdf'>
               <span className='text-2xl  text-amber-50 p-0 '>
                 <span className='font-semibold text-base '>Trusted</span> <br /> 2550</span>
             </div>
             <Image src={img5} width={450} className='relative z-1 rounded-2xl' alt="" />
 
-            <Image src={img4} className='absolute top-70 z-0 right-10 rounded-2xl' alt="" />
-            <div className='absolute -bottom-60 left-10 z-10 animate-bounce'>
+            <Image src={img4} className='lg:block hidden absolute top-70 z-0 right-10 rounded-2xl' alt="" />
+            <div className='absolute lg:-bottom-60 left-10 z-10 animate-bounce'>
               <div className='flex flex-row gap-3 justify-center bradientcolor rounded-lg items-center py-4 px-10'>
                 <p className='text-5xl mb-2 text-white font-extrabold'>25</p>
                 <div className='text-center'>
@@ -216,9 +222,9 @@ export default function page() {
 
             <div className='flex flex-col gap-10 mt-12'>
 
-              <div className='flex'>
-                <div className='w-64  p-6 border-l-2 border-[#66636363] '>
-                  <img style={{ width: '100%' }} src="https://finbest-nextjs.netlify.app/_next/static/media/icon-1.8b70227d.svg" alt="" />
+              <div className='flex lg:flex-row flex-col'>
+                <div className='w-64 lg:mb-0 mb-4 p-6 border-l-2 border-[#66636363] '>
+                  <img style={{ width: '80px' }} src="https://finbest-nextjs.netlify.app/_next/static/media/icon-1.8b70227d.svg" alt="" />
                 </div>
                 <div>
                   <h4 className='text-2xl font-semibold'>Best emplementation</h4>
@@ -228,9 +234,9 @@ export default function page() {
                 </div>
               </div>
 
-              <div className='flex'>
-                <div className='w-52 p-4 border-l-2 border-[#66636363] '>
-                  <img style={{ width: '100%' }} src="https://finbest-nextjs.netlify.app/_next/static/media/icon-1.8b70227d.svg" alt="" />
+              <div className='flex lg:flex-row flex-col'>
+                <div className='w-52 lg:mb-0 mb-4 p-4 border-l-2 border-[#66636363] '>
+                  <img style={{ width: '80px' }} src="https://finbest-nextjs.netlify.app/_next/static/media/icon-1.8b70227d.svg" alt="" />
                 </div>
                 <div>
                   <h4 className='text-2xl font-semibold'>Design make for you</h4>
@@ -240,9 +246,9 @@ export default function page() {
                 </div>
               </div>
 
-              <div className='flex'>
-                <div className='w-52 p-4 border-l-2 border-[#66636363] '>
-                  <img style={{ width: '100%', height: '100%' }} src="https://finbest-nextjs.netlify.app/_next/static/media/icon-1.8b70227d.svg" alt="" />
+              <div className='flex lg:flex-row flex-col'>
+                <div className='w-52 lg:mb-0 mb-4 p-4 border-l-2 border-[#66636363] '>
+                  <img style={{ width: '80px', height: '100%' }} src="https://finbest-nextjs.netlify.app/_next/static/media/icon-1.8b70227d.svg" alt="" />
                 </div>
                 <div>
                   <h4 className='text-2xl font-semibold'>Finished the process</h4>
@@ -260,8 +266,8 @@ export default function page() {
       </section>
 
       {/* Testimonial */}
-      <section className='relative TestimonialS'>
-        <div className='TestimonialSbg'>
+      <section className='relative TestimonialS lg:after:block after:hidden '>
+        <div className='TestimonialSbg lg:block hidden '>
           <img alt="image-title-here" loading="lazy" width="558" height="492" decoding="async" data-nimg="1" 
           src="https://finbest-nextjs.netlify.app/_ipx/w_640,q_75/%2F_next%2Fstatic%2Fmedia%2Fbg-shape.8411c19e.png?url=%2F_next%2Fstatic%2Fmedia%2Fbg-shape.8411c19e.png&w=640&q=75"></img>
         </div>
@@ -271,7 +277,7 @@ export default function page() {
           <h2 className='textsize  mt-5 mb-0'>Unleashing the power of <br /> your business</h2>
         </div>
 
-        <div className='mt-10'>
+        <div className='mt-10 mx-auto w-[90%]'>
           <Carousel
             opts={{
               align: "start",
@@ -281,15 +287,17 @@ export default function page() {
             <CarouselContent>
               <>
                 {TestimonialData.map((item, index) => (
-                  <CarouselItem className='basis-1/2' key={index}>
+                  <CarouselItem className='lg:basis-1/2 ' key={index}>
                     <Testimonial key={index} img={item.img} about={item.about} name={item.name} type={item.type} />
                   </CarouselItem>
                 ))}
 
               </>
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious  className='lg:flex hidden hover:bg-blue-500
+            
+            '  />
+            <CarouselNext className='lg:flex hidden text-white hover:bg-blue-500' />
           </Carousel>
         </div>
        </div>
@@ -300,7 +308,7 @@ export default function page() {
           <p className='subheading w-full text-center'>Clients Testomonial</p>
           <h2 className='textsize text-center mt-5 mb-0'>Leading the way in business transformation</h2>
         </div>
-        <div className='flex justify-around pt-20 '>
+        <div className='flex lg:flex-row flex-col items-center justify-around pt-20 '>
 
 
           <motion.div
@@ -313,7 +321,7 @@ export default function page() {
                 transition: { staggerChildren: 0.1 }
               }
             }}
-            className='relative ashish group h-fit rounded-lg'>
+            className='relative ashish group w-fit h-fit rounded-lg'>
             <Image src={profile1} alt='profile' />
 
             <div className='absolute z-10 w-full flex flex-col items-center bottom-0 py-14'>
@@ -350,7 +358,7 @@ export default function page() {
                 transition: { staggerChildren: 0.1 }
               }
             }}
-            className='relative ashish group mt-10 rounded-lg'>
+            className='relative ashish w-fit group mt-10 rounded-lg'>
             <Image src={profile2} alt='profile' />
 
             <div className='absolute z-10 w-full flex flex-col items-center bottom-0 py-14'>
@@ -387,7 +395,7 @@ export default function page() {
                 transition: { staggerChildren: 0.1 }
               }
             }}
-            className='relative ashish group h-fit rounded-lg'>
+            className='relative ashish w-fit group h-fit rounded-lg'>
             <Image src={profile3} alt='profile' />
 
             <div className='absolute z-10 w-full flex flex-col items-center bottom-0 py-14'>
@@ -424,7 +432,7 @@ export default function page() {
                 transition: { staggerChildren: 0.1 }
               }
             }}
-            className='relative ashish group mt-10 rounded-lg'>
+            className='relative ashish w-fit group mt-10 rounded-lg'>
             <Image src={profile4} alt='profile' />
 
             <div className='absolute z-10 w-full flex flex-col items-center bottom-0 py-14'>

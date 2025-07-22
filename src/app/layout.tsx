@@ -5,6 +5,11 @@ import './Style.css'
 import Header from "./components/Navigation/Header";
 import Footer from "./components/Footer";
 
+
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

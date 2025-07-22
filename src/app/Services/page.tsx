@@ -1,4 +1,4 @@
-"use client"
+
 import React from 'react'
 import Data from './ServisesData'
 import Link from 'next/link'
@@ -18,7 +18,7 @@ function page() {
 
                 <div className='grid lg:grid-cols-3 grid-cols-1 gap-10 gap-y-28'>
                     {Data.map((item, index) =>
-                        <Link key={item.id} href={`/Services/${item.id}`}>
+                        <Link key={index} href={`/Services/${item.id}`}>
                             <div className='shadow-md inset-shadow-2xs pb-10 px-10 rounded-xl group'>
 
                             <Image

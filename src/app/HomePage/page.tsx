@@ -33,6 +33,7 @@ import AnimatedSection from '../components/AnimatedSection'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneVolume, faPlay } from '@fortawesome/free-solid-svg-icons'
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@/components/ui/select'
+import Newheader from '../components/Navigation/Newheader'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -78,6 +79,7 @@ const fadeLeft = {
 function HomePage() {
   return (
     <>
+    <Newheader />
       <section className='imageBg'>
         <div className='grid lg:grid-cols-2 grid-cols-1 asdf '>
           <div className='section_1'>

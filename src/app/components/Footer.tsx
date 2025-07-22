@@ -10,7 +10,7 @@ function Footer() {
     <section className=' bg-[#0a5b61]'>
       <div className='asdf grid gap-5 lg:grid-cols-8 grid-cols-1 sm:grid-cols-2'>
         <div className='lg:col-span-3 pe-12 text-white'>
-          <Image src={image} alt='logo' width={180} />
+          <Image className='border-[2px] border-white rounded-4xl' src={image} alt='logo' width={180} />
           <p className='mt-5 text-lg'>Payment processing is a critical component of any business that sells goods or se Payment processing is a critical component of any.</p>
           <div className='flex gap-2 mt-5 '>
             <a href="#">

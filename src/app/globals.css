@@ -6,6 +6,8 @@
  @tailwind components;
  @tailwind utilities;
 
+ /* icon */
+
  @layer base {
      * {
          /* @apply border-border outline-ring/50; */
@@ -132,7 +134,7 @@
      width: 130px;
      border: 1px dashed #fff;
      border-radius: 50%;
-     animation: tp-spin 10s ease infinite;
+     animation: tp-spin 10s linear infinite;
  }
 
  @keyframes tp-spin {
@@ -408,25 +410,23 @@
 
  @keyframes bounce-x {
      0% {
-         transform: translateX(40%);
+         transform: translateX(10%);
      }
 
      50% {
-         transform: translateX(-40%);
+         transform: translateX(-10%);
      }
 
      100% {
-         transform: translateX(40%);
+         transform: translateX(10%);
      }
  }
 
  .bounce-x {
-     animation: bounce-x 10s ease-in-out infinite;
+     animation: bounce-x 2s ease-in-out infinite;
  }
 
  .bgroundcolorImage1 {
-     /* position: relative;
-            z-index: 5; */
      background-image: url(../../asset/img/about/wave1.png);
      background-size: contain;
  }

@@ -4,7 +4,17 @@ import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
 
-export default function RIghtSide() {
+
+
+const services = [
+  "Home Loan",
+  "Personal Loan",
+  "Business Loan",
+  "Loan Against Property",
+  "CIBIL Score Guidance"
+];
+
+export default function RIghtSide({ title }: any) {
   return (
     <>
       <section>
@@ -12,22 +22,34 @@ export default function RIghtSide() {
           <h1>Our service</h1>
 
           <ul className=''>
+            {services.map((item, index) =>
+              <li key={index} className={`p-2 text-lg bg-[#f6f6f9] mt-2 rounded-lg relative cursor-pointer transition-all duration-200 ${
+            item === title ? 'activeli shadow-md' : 'shadow-sm'
+          }`}>
+                <p>{item}</p>
+              </li>
+
+            )}
+          </ul >
+
+
+          {/* <ul className=''>
             <li className='p-2 text-lg bg-[#f6f6f9]  mt-2 rounded-lg shadow-md'>
-              <p>Finance & Banking</p>
+              <p>Home Loan</p>
             </li>
             <li className='p-2 text-lg bg-[#f6f6f9] mt-2 relative rounded-lg shadow-sm hover:shadow-md'>
-              <p className='activeli'>Business Advice</p>
+              <p className='activeli'>Personal Loan</p>
             </li>
             <li className='p-2 text-lg bg-[#f6f6f9] mt-2 relative rounded-lg shadow-sm hover:shadow-md'>
-              <p className=''>Private Finance</p>
+              <p className=''>Business Loan</p>
             </li>
             <li className='p-2 text-lg bg-[#f6f6f9] mt-2 rounded-lg shadow-sm hover:shadow-md'>
-              <p>Regular start</p>
+              <p>Loan Against Property</p>
             </li>
             <li className='p-2 text-lg bg-[#f6f6f9] mt-2 rounded-lg shadow-sm hover:shadow-md'>
-              <p>Precious metal</p>
+              <p>CIBLE Score Guidencess</p>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </section>
 
@@ -38,15 +60,15 @@ export default function RIghtSide() {
             <Image className=' p-4 rounded-full bg-white' src={call} width={60} alt='call Icon' />
             Requesting A Call: <br />
 
-          <span>000 555-0129</span>
+            <span>000 555-0129</span>
           </div>
         </div>
       </section>
 
       <section className='relative shadow-md pb-8 roundedsm overflow-hidden mt-10'>
         <div className='flex justify-between bg-[#f6f6f9] py-4 horiLine rounded-md px-5' >
-        <h5>  <a href="£" className='font-semibold text-xl'>Download Profile</a></h5>
-          <FontAwesomeIcon icon={faFileArrowDown} size='2xl' style={{color:"#005d7d"}} />
+          <h5>  <a href="£" className='font-semibold text-xl'>Download Profile</a></h5>
+          <FontAwesomeIcon icon={faFileArrowDown} size='2xl' style={{ color: "#005d7d" }} />
         </div>
 
         <ul className='p-5 mt-5 flex flex-col gap-2 '>

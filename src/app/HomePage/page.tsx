@@ -34,6 +34,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneVolume, faPlay } from '@fortawesome/free-solid-svg-icons'
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@/components/ui/select'
 import Newheader from '../components/Navigation/Newheader'
+import ButtonTes from '@/components/cusComponent/buttonTes'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -226,40 +227,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className='asdf '>
-        <div className='flex flex-wrap gap-5 justify-around mb-10'>
-          <div>
-            <p className='subheading'>our latest project</p>
-            <h2 className='textsize md:w-96 w-full mt-5 mb-0'>Building wealth together</h2>
-          </div>
-
-          <div className='flex flex-wrap gap-4 items-end'>
-            <Button className='btnC px-7 py-5' style={{ background: 'linear-gradient(90deg, #004d6e, #00accc)', color: 'white' }}>Business</Button>
-            <Button className='btnC px-7 py-5'>Architecher</Button>
-            <Button className='btnC px-7 py-5'>Large</Button>
-            <Button className='btnC px-7 py-5'>Interiour</Button>
-            <Button className='btnC px-7 py-5'>House</Button>
-          </div>
-
-        </div>
-        <div className='flex flex-wrap gap-6 justify-center'>
-          <div>
-            <Image className='mb-5' src={sect43} alt='asdf' />
-            <div className='flex flex-wrap justify-between'>
-              <Image src={sect41} alt='asdf'></Image>
-              <Image src={sect42} alt='asdf'></Image>
-            </div>
-          </div>
-
-          <div className='flex flex-wrap flex-col-reverse '>
-            <Image className='mt-5' src={sect43} alt='asdf' />
-            <div className='flex flex-wrap justify-between'>
-              <Image src={sect41} alt='asdf' />
-              <Image src={sect42} alt='asdf' />
-            </div>
-          </div>
-        </div>
-      </section>
+       <ButtonTes/>
 
       <section className='asdf '>
         <div>

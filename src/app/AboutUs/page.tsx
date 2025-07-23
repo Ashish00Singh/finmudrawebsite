@@ -100,7 +100,7 @@ export default function page() {
 
                   <div className='flex bg-white flex-row gap-3 justify-evenly rounded-lg items-center border border-[#00000048] py-4 px-5'>
                     <div className='rounded-full p-4 bradientcolor w-fit h-fit'>
-                      <Image width={30} height={30} src={'https://finbest-nextjs.netlify.app/_next/static/media/icon-1.9a5379f6.svg'} alt='sdh'></Image>
+                      <Image width={30} height={30} src={rating} alt='sdh'></Image>
                     </div>
                     <div className='text-black'>
                       <p className='font-extrabold text-2xl'>500 +</p>
@@ -258,8 +258,6 @@ export default function page() {
                 </div>
               </div>
 
-
-
             </div>
           </div>
         </div>
@@ -268,39 +266,36 @@ export default function page() {
       {/* Testimonial */}
       <section className='relative TestimonialS lg:after:block after:hidden '>
         <div className='TestimonialSbg lg:block hidden '>
-          <img alt="image-title-here" loading="lazy" width="558" height="492" decoding="async" data-nimg="1" 
-          src="https://finbest-nextjs.netlify.app/_ipx/w_640,q_75/%2F_next%2Fstatic%2Fmedia%2Fbg-shape.8411c19e.png?url=%2F_next%2Fstatic%2Fmedia%2Fbg-shape.8411c19e.png&w=640&q=75"></img>
+          <img alt="image-title-here" loading="lazy" width="558" height="492" decoding="async" data-nimg="1"
+            src="https://finbest-nextjs.netlify.app/_ipx/w_640,q_75/%2F_next%2Fstatic%2Fmedia%2Fbg-shape.8411c19e.png?url=%2F_next%2Fstatic%2Fmedia%2Fbg-shape.8411c19e.png&w=640&q=75"></img>
         </div>
-       <div className='asdf'>
-         <div>
-          <p className='subheading'>Clients Testomonial</p>
-          <h2 className='textsize  mt-5 mb-0'>Unleashing the power of <br /> your business</h2>
-        </div>
+        <div className='asdf'>
+          <div>
+            <p className='subheading'>Clients Testomonial</p>
+            <h2 className='textsize  mt-5 mb-0'>Unleashing the power of <br /> your business</h2>
+          </div>
 
-        <div className='mt-10 mx-auto w-[90%]'>
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            className="w-full ">
-            <CarouselContent>
-              <>
-                {TestimonialData.map((item, index) => (
-                  <CarouselItem className='lg:basis-1/2 ' key={index}>
-                    <Testimonial key={index} img={item.img} about={item.about} name={item.name} type={item.type} />
-                  </CarouselItem>
-                ))}
-
-              </>
-            </CarouselContent>
-            <CarouselPrevious  className='lg:flex hidden hover:bg-blue-500
-            
-            '  />
-            <CarouselNext className='lg:flex hidden text-white hover:bg-blue-500' />
-          </Carousel>
+          <div className='mt-10 mx-auto w-[90%]'>
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full ">
+              <CarouselContent>
+                <>
+                  {TestimonialData.map((item, index) => (
+                    <CarouselItem className='lg:basis-1/2 ' key={index}>
+                      <Testimonial key={index} img={item.img} about={item.about} name={item.name} type={item.type} />
+                    </CarouselItem>
+                  ))}
+                </>
+              </CarouselContent>
+              <CarouselPrevious className='lg:flex hidden hover:bg-blue-500'/>
+              <CarouselNext className='lg:flex hidden text-white hover:bg-blue-500' />
+            </Carousel>
+          </div>
         </div>
-       </div>
       </section>
 
       <section className='asdf '>
@@ -460,8 +455,6 @@ export default function page() {
           </motion.div>
         </div>
       </section>
-
-
     </>
   )
 }

@@ -294,7 +294,6 @@
  }
 
  .btnC {
-     color: black;
      font-size: 17px;
      font-weight: 500;
      background-color: #f6f6f9;
@@ -427,7 +426,7 @@
  }
 
  .bgroundcolorImage1 {
-     background-image: url(../../asset/img/about/wave1.png);
+     background-image: url(../../asset/img//about/wave1.png);
      background-size: contain;
  }
 

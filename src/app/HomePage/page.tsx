@@ -36,20 +36,7 @@ import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrig
 import Newheader from '../components/Navigation/Newheader'
 import ButtonTes from '@/components/cusComponent/buttonTes'
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2, // delay between children
-    },
-  },
-}
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-}
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
@@ -80,7 +67,7 @@ const fadeLeft = {
 function HomePage() {
   return (
     <>
-    <Newheader />
+    
       <section className='imageBg'>
         <div className='grid lg:grid-cols-2 grid-cols-1 asdf '>
           <div className='section_1'>
@@ -197,31 +184,9 @@ function HomePage() {
           </div>
           <div>
             <div className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 w-full justify-items-center  '>
-              {/* <div className='card-container shadow-xl rounded-lg'>
-                <Image className='imge1' alt='' src={profile1}></Image>
-                <div className='iconImg2 p-1 flex justify-center'>
-                  <Image className='iconImg' alt='' src={Starsd}></Image>
-                </div>
-                <div className='tp-service-content-2 flex flex-col gap-4'>
-                  <hr className='w-16 hovereff' />
-                  <p className='hovereff'>Our services</p>
-                  <h3 className='tp-service-title-2'>Mint Financial Management</h3>
-                </div>
-                <button className='tp-service-btn absolute z-1 p-4 rounded-full -bottom-7 bg-white' >
-                  <div className='w-3.5 h-3.5'>
-                    <svg width={12} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                      <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg>
-
-                  </div>
-                </button>
-              </div> */}
-              <Card />
-
-              <Card />
-
-              <Card />
-
-              <Card />
+              <AnimatedSection 
+              cards={[Card, Card, Card, Card]}
+            animationVariant={fadeUp} />
             </div>
           </div>
         </div>
@@ -396,8 +361,8 @@ function HomePage() {
           <div className='formcontainer' >
             <h3 className='textsize'>Get in touch</h3>
             <div className='flex flex-col gap-7 mt-12'>
-              <input id='eamil' name='email' className='border-b-black border-b-1 focus:outline-none focus:border-b-1 p-3 ' type="email" placeholder="Full name" />
-              <input id='eamil' name='email' className='border-b-black border-b-1 focus:outline-none focus:border-b-1 p-3 ' type="email" placeholder="Full name" />
+              <input id='eamil' name='email' className='border-b-black border-b-1 focus:outline-none focus:border-b-1 p-3 ' type="text" placeholder="Full name" />
+              <input id='Nmae' name='Nmae' className='border-b-black border-b-1 focus:outline-none focus:border-b-1 p-3 ' type="email" placeholder="Nmae" />
 
               <Select>
                 <SelectTrigger className="w-full border rounded-md transition hover:border-green-600 hover:shadow-md hover:bg-green-50">

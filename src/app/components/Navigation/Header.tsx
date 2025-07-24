@@ -45,7 +45,7 @@ export default function Header() {
     }
   }, [])
   return (
-    <div className='mainContainer max-w-[1500px] m-auto px-2'>
+    <div className=' max-w-[1500px] m-auto px-2'>
       {!mobNav && (<div className="grid grid-cols-10 gap-0 ">
         <div className='navlogo col-span-1 items-center '>
           

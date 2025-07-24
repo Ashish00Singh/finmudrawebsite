@@ -67,8 +67,6 @@ const Container = [
 export default function ButtonTes() {
   const [select, setSetect] = useState<any>(Container[0])
 
-
-  console.log(select)
   const handleClick = (item: any) => {
     setSetect(item)
   }

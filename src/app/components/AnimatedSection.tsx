@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import {  useState } from 'react';
 
 const AnimatedSection = ({ cards, animationVariant }:any) => {
-//   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
+  // const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
   const [show, setShow] = useState(false);
 
 ;

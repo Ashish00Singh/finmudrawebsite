@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import './Style.css'
-import Header from "./components/Navigation/Header";
 import Footer from "./components/Footer";
-
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import Newheader from "./components/Navigation/Newheader";
+import Header from "./components/Navigation/Header";
 config.autoAddCss = false
 
 const geistSans = Geist({
@@ -35,6 +35,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 
         <header className='shadow-md'>
+          <Newheader />
           <Header />
         </header>
         <main>

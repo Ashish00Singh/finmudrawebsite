@@ -53,9 +53,7 @@ export function Login() {
             newErrors.password = validationForm.find((v) => v.validation === "password")?.error;
             isValid = false;
         }
-        // console.log(newErrors)
-        // console.log(errors)
-         setErrors(newErrors);
+        setErrors(newErrors);
         return isValid;
     }
 
@@ -63,42 +61,39 @@ export function Login() {
         if (emailbtn()) {
             alert("Form Submitted Successfully ✅");
             console.log(loginDta);
-            // Submit form or call API here
         }
     }
 
     return (
         <Dialog>
-            {/* <form> */}
             <DialogTrigger asChild>
                 <Button variant="outline">Login</Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[425px] bg-white">
                 <DialogHeader>
-                    <DialogTitle>Edit profile</DialogTitle>
+                    <DialogTitle>Log in</DialogTitle>
                     <DialogDescription>
-                        Make changes to your profile here. Click save when you&apos;re
-                        done.
+                        Enter your email and password to access your account.
                     </DialogDescription>
                 </DialogHeader>
                 <div className="grid gap-4">
                     <div className="grid gap-3">
-                        <Label htmlFor="name-1">Name</Label>
+                        <Label>Email/Username</Label>
                         <Input
+                            id="login-email"
                             className=" focus:outline focus:outline-[#ff4747] focus:rounded-sm p-2 focus-visible:ring-0 "
-                            id="username-1"
-                            name="username"
+                            name="eamil"
                             value={loginDta.email}
                             onChange={(text) => setformData({ ...loginDta, email: text.target.value })}
                             type="email" />
-                           {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
+                        {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
                     </div>
                     <div className="grid gap-3">
-                        <Label htmlFor="username-1">Username</Label>
+                        <Label >Password</Label>
                         <div className="relative w-full max-w-sm">
                             <Input
+                                id="login-password"
                                 className="focus:outline focus:outline-[#ff4747] focus:rounded-sm p-2 focus-visible:ring-0 pr-10"
-                                id="password"
                                 name="password"
                                 type={showPassword ? "text" : "password"}
                                 placeholder="password"
@@ -109,11 +104,11 @@ export function Login() {
                                 type="button"
                                 onClick={() => setShowPassword(!showPassword)}
                                 className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-600"
-                                >
+                            >
                                 {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
                             </button>
                         </div>
-                                {errors.password && <p className="text-red-500 text-sm">{errors.password}</p>}
+                        {errors.password && <p className="text-red-500 text-sm">{errors.password}</p>}
                     </div>
                 </div>
                 <DialogFooter>
@@ -123,7 +118,6 @@ export function Login() {
                     <Button type="submit" onClick={handleSubmit}>Save changes</Button>
                 </DialogFooter>
             </DialogContent>
-            {/* </form> */}
         </Dialog>
     )
 }

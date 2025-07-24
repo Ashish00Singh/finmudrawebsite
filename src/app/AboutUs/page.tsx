@@ -1,7 +1,6 @@
 "use client"
 import Image from 'next/image'
 import React from 'react'
-import img from '../../../asset/img/about/image.jpeg'
 import img1 from '../../../asset/img/about/image.png'
 import img2 from '../../../asset/img/about/image_1.jpeg'
 import img3 from '../../../asset/img/about/image_2.jpeg'
@@ -27,7 +26,6 @@ import Testimonial from '../components/card/Testimonial'
 
 // data
 import TestimonialData from '../dataJs/Testimonial'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const icons = [facebook, instagram, twiter, linkedin];

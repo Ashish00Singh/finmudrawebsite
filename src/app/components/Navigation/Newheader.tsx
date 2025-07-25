@@ -21,7 +21,6 @@ function classNames(...classes: any) {
 
 export default function Newheader() {
   const pathname = usePathname();
-
   return (
     <Disclosure as="nav" className="bg-white ">
       <div className="mx-auto max-w-[1500px] px-2 sm:px-4 lg:px-4">
@@ -53,10 +52,7 @@ export default function Newheader() {
                     className={classNames(
                       pathname === item.href ? 'colorbg text-white' : 'text-black hover:bg-gray-700 hover:text-white',
                       'rounded-md px-3 py-2 text-sm font-medium',
-                    )}
-                  >
-
-                    
+                    )}>
                     {item.name}
                   </a>
                 ))}
@@ -64,23 +60,16 @@ export default function Newheader() {
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <button
-              type="button"
-              className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
-            >
-              <span className="absolute -inset-1.5" />
-              <span className="sr-only">View notifications</span>
-              <BellIcon aria-hidden="true" className="size-6" />
-            </button>
+            {/*   */}
 
             <div className='flex justify-end justify-items-center items-center gap-5 p-4 flex-row'>
            <Login/>
-            <Image width={40} height={40} src={callIcon} alt="" className='imgCont' />
+            <Image width={20} height={20} src={callIcon} alt="" className='imgCont' />
 
             <div className='flex flex-col'>
-              <p className='font-semibold text-center'>
+              <p className='font-semibold text-sm text-center'>
                 Requesting A Call:</p>
-              <a href='#' className='text-center hover:underline underline-offset-2 decoration-blue-500'>(629) 555-0129</a>
+              <a href='#' className='text-center hover:underline underline-offset-2 text-sm decoration-blue-500'>(629) 555-0129</a>
             </div>
           </div>
 

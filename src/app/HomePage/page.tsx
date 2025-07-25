@@ -13,16 +13,11 @@ import instagram from '../../../asset/icon/brandIcon/instagram-brands.png'
 import twiter from '../../../asset/icon/brandIcon/twitter-brands.png'
 import linkedin from '../../../asset/icon/brandIcon/linkedin-in-brands.png'
 
-
 import img4 from '../../../asset/img/img-1.389b1aba (1).jpg'
 import img5 from '../../../asset/img/img-1.389b1aba.jpg'
 import profile from '../../../asset/img/webdigner.jpg'
 import videoimg from '../../../asset/img/videoimg.jpg'
 
-
-import sect41 from '../../../asset/img/section4 (1).jpg'
-import sect42 from '../../../asset/img/section4 (2).jpg'
-import sect43 from '../../../asset/img/section4 (3).jpg'
 import profile11 from '../../../asset/img/profile/imgi_87_image.jpg'
 
 import Image from 'next/image'
@@ -33,10 +28,7 @@ import AnimatedSection from '../components/AnimatedSection'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneVolume, faPlay } from '@fortawesome/free-solid-svg-icons'
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@/components/ui/select'
-import Newheader from '../components/Navigation/Newheader'
 import ButtonTes from '@/components/cusComponent/buttonTes'
-
-
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },

@@ -36,7 +36,7 @@ export default function RootLayout({
 
         <header className='shadow-md'>
           <Newheader />
-          <Header />
+          {/* <Header /> */}
         </header>
         <main>
           {children}

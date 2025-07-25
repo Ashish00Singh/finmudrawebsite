@@ -20,15 +20,11 @@ function classNames(...classes: any) {
 }
 
 export default function Newheader() {
-
   const pathname = usePathname();
-  console.log(pathname)
-
-
 
   return (
     <Disclosure as="nav" className="bg-white ">
-      <div className="mx-auto max-w-[1500px] px-2 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1500px] px-2 sm:px-4 lg:px-4">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
@@ -55,7 +51,7 @@ export default function Newheader() {
                     href={item.href}
                     aria-current={pathname === item.href ? 'page' : undefined}
                     className={classNames(
-                      pathname === item.href ? 'bg-gray-900 text-white' : 'text-black hover:bg-gray-700 hover:text-white',
+                      pathname === item.href ? 'colorbg text-white' : 'text-black hover:bg-gray-700 hover:text-white',
                       'rounded-md px-3 py-2 text-sm font-medium',
                     )}
                   >
@@ -151,7 +147,7 @@ export default function Newheader() {
               href={item.href}
               aria-current={pathname === item.href ? 'page' : undefined}
               className={classNames(
-                pathname === item.href ? 'bg-gray-900 text-white' : 'text-black hover:bg-gray-700 hover:text-white',
+                pathname === item.href ? 'colorbg text-white' : 'text-black hover:bg-gray-700 hover:text-white',
                 'block rounded-md px-3 py-2 text-base font-medium',
               )}
             >
